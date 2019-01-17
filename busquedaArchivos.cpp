@@ -387,6 +387,24 @@ bool soloComas(char* B)
 	}
 	return true;
 }
+bool AdvCombinar(char* A,char* B)
+{
+	string first(A),second(B);
+	int f=0,s=0;
+	for(int i=0;i<first.size();i++)
+	{
+		if(first[i]==',')
+			f++;
+	}
+	for(int i=0;i<second.size();i++)
+	{
+		if(second[i]==',')
+			s++;
+	}
+	if(s==f)
+		return true;
+	else return false;	
+}
 string combinar(char* A,char* B)
 {
 	string first(A),second(B);
@@ -516,7 +534,11 @@ void Analizador(string carpeta)
 				archivo.getline(esc,10000);
 				strcat(escritura,",");
 				strcat(escritura,esc);
-				
+				if(!AdvCombinar(lectura,escritura))
+				{
+					cout<<"Advertencia uno de los elementos no tiene unidad de medicion(O biseversa)."<<endl;
+					return;
+				}	
 				string r=combinar(lectura,escritura);
 				nomArchi=recopilarNombre(Archivos[i]);
 				ofstream result(carpeta+"/resultados/"+nomArchi+".CSV");

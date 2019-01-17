@@ -1,0 +1,1 @@
+Wgt,RW,Au,Mo,Cu,Pb,Zn,Ag,Ni,Co,Mn,Fe,As,U,Th,Sr,Cd,Sb,Bi,V,Ca,P,La,Cr,Mg,Ba,Ti,Al,Na,K,W,Zr,Ce,Sn,Y,Nb,Ta,Be,Sc,Li,S,Rb,Hf,In,Re,Se,Te,Tl,Cu,RW

@@ -1,0 +1,1 @@
+Min Detection,Max Detection,ppm,PPM,%,KG,kg,pct,PCT,Limite,Unidad,Metodo,Elemento,Metodo,
